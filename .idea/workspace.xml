@@ -4,7 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66ddea2a-cc1b-43f3-974d-0404c6fd67a4" name="Changes" comment="" />
+    <list default="true" id="66ddea2a-cc1b-43f3-974d-0404c6fd67a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Baraka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Baraka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BarakaFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/BarakaFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ChangeTexts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/controller/ChangeTexts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CharacterAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/controller/CharacterAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EnemyFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/EnemyFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EnemyFabricInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/EnemyFabricInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Fight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JFrames.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/view/JFrames.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JFrames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/view/JFrames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LiuKang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/LiuKang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LiuKangFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/LiuKangFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MortalKombatBVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/MortalKombatBVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ShaoKahn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/ShaoKahn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ShaoKahnFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/ShaoKahnFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SonyaBlade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/SonyaBlade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SonyaBladeFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/SonyaBladeFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SubZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/SubZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SubZeroFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/SubZeroFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mortalkombatbLab5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/mortalkombatbLab5.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +71,7 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/alex/Projects/LabWork4/mylab5",
@@ -53,8 +86,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/mortalkombatbversion" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/view" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/mortalkombat" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/mortalkombat/Frame" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="mortalkombatbversion.fabric" />
+      <recent name="org.example.model" />
+      <recent name="org.example.controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -90,6 +130,7 @@
       <workItem from="1748306978712" duration="78000" />
       <workItem from="1748360003669" duration="1635000" />
       <workItem from="1748361655170" duration="86000" />
+      <workItem from="1748361851074" duration="1735000" />
     </task>
     <servers />
   </component>
