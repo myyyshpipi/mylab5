@@ -1,0 +1,290 @@
+@startuml
+interface mortalkombatbversion.fabric.EnemyFabricInterface {
++ Player create(int)
+}
+
+class mortalkombatbversion.view.JFrames {
+~ Game game
+~ Human human
+~ Player enemy
+~ Items[] items
+~ String nameButton
+- javax.swing.ButtonGroup buttonGroup1
+- javax.swing.JButton jButton1
+- javax.swing.JButton jButton10
+- javax.swing.JButton jButton11
+- javax.swing.JButton jButton2
+- javax.swing.JButton jButton3
+- javax.swing.JButton jButton4
+- javax.swing.JButton jButton5
+- javax.swing.JButton jButton6
+- javax.swing.JButton jButton7
+- javax.swing.JButton jButton8
+- javax.swing.JButton jButton9
+- javax.swing.JDialog jDialog1
+- javax.swing.JDialog jDialog2
+- javax.swing.JDialog jDialog3
+- javax.swing.JDialog jDialog4
+- javax.swing.JDialog jDialog5
+- javax.swing.JDialog jDialog6
+- javax.swing.JFrame jFrame1
+- javax.swing.JLabel jLabel1
+- javax.swing.JLabel jLabel10
+- javax.swing.JLabel jLabel11
+- javax.swing.JLabel jLabel12
+- javax.swing.JLabel jLabel13
+- javax.swing.JLabel jLabel14
+- javax.swing.JLabel jLabel15
+- javax.swing.JLabel jLabel16
+- javax.swing.JLabel jLabel17
+- javax.swing.JLabel jLabel18
+- javax.swing.JLabel jLabel19
+- javax.swing.JLabel jLabel2
+- javax.swing.JLabel jLabel20
+- javax.swing.JLabel jLabel21
+- javax.swing.JLabel jLabel22
+- javax.swing.JLabel jLabel23
+- javax.swing.JLabel jLabel24
+- javax.swing.JLabel jLabel25
+- javax.swing.JLabel jLabel26
+- javax.swing.JLabel jLabel27
+- javax.swing.JLabel jLabel28
+- javax.swing.JLabel jLabel29
+- javax.swing.JLabel jLabel3
+- javax.swing.JLabel jLabel30
+- javax.swing.JLabel jLabel31
+- javax.swing.JLabel jLabel32
+- javax.swing.JLabel jLabel4
+- javax.swing.JLabel jLabel5
+- javax.swing.JLabel jLabel6
+- javax.swing.JLabel jLabel7
+- javax.swing.JLabel jLabel8
+- javax.swing.JLabel jLabel9
+- javax.swing.JPanel jPanel1
+- javax.swing.JPanel jPanel2
+- javax.swing.JPanel jPanel3
+- javax.swing.JPanel jPanel4
+- javax.swing.JPanel jPanel5
+- javax.swing.JPanel jPanel6
+- javax.swing.JPanel jPanel7
+- javax.swing.JPanel jPanel8
+- javax.swing.JProgressBar jProgressBar1
+- javax.swing.JProgressBar jProgressBar2
+- javax.swing.JRadioButton jRadioButton1
+- javax.swing.JRadioButton jRadioButton2
+- javax.swing.JRadioButton jRadioButton3
+- javax.swing.JScrollPane jScrollPane1
+- javax.swing.JTable jTable1
+- javax.swing.JTextField jTextField1
++ <<Create>> JFrames()
+- void initComponents()
+- void jButton1ActionPerformed(java.awt.event.ActionEvent)
+- void jButton3ActionPerformed(java.awt.event.ActionEvent)
+- void jButton4ActionPerformed(java.awt.event.ActionEvent)
+- void jButton5ActionPerformed(java.awt.event.ActionEvent)
+- void jTextField1ActionPerformed(java.awt.event.ActionEvent)
+- void jButton6ActionPerformed(java.awt.event.ActionEvent)
+- void jButton7ActionPerformed(java.awt.event.ActionEvent)
+- void jButton2ActionPerformed(java.awt.event.ActionEvent)
+- void jButton8ActionPerformed(java.awt.event.ActionEvent)
+- void jRadioButton1ActionPerformed(java.awt.event.ActionEvent)
+- void jRadioButton2ActionPerformed(java.awt.event.ActionEvent)
+- void jButton9ActionPerformed(java.awt.event.ActionEvent)
+- void jButton10ActionPerformed(java.awt.event.ActionEvent)
+- void jButton11ActionPerformed(java.awt.event.ActionEvent)
++ {static} void main(String[])
+}
+
+
+class mortalkombatbversion.controller.CharacterAction {
+- int[] experience_for_next_level
+- int[][] kind_fight
+- Player[] enemyes
+~ EnemyFabric fabric
+- Player enemyy
++ void setEnemyes()
++ Player[] getEnemyes()
++ Player ChooseEnemy(JLabel,JLabel,JLabel,JLabel)
++ Player ChooseBoss(JLabel,JLabel,JLabel,JLabel,int)
++ int[] EnemyBehavior(int,int,int,int,double)
++ int[] ChooseBehavior(Player,CharacterAction)
++ void HP(Player,JProgressBar)
++ void AddPoints(Human,Player[])
++ void AddPointsBoss(Human,Player[])
++ void AddItems(int,int,int,Items[])
++ void NewHealthHuman(Human)
++ void NewHealthEnemy(Player,Human)
++ void UseItem(Player,Items[],String,JDialog,JDialog)
+}
+
+
+class mortalkombatbversion.MortalKombatBVersion {
++ {static} void main(String[])
+}
+
+class mortalkombatbversion.model.Game {
++ CharacterAction action
++ ChangeTexts change
++ Fight fight
+- ArrayList<Result> results
++ Player NewEnemy(JLabel,JLabel,JLabel,JLabel,JProgressBar)
++ Human NewHuman(JProgressBar)
++ void EndGameTop(Human,JTextField,JTable)
++ void WriteToExcel()
++ ArrayList<Result> getResults()
++ void ReadFromExcel()
++ void WriteToTable(JTable)
+}
+
+
+class mortalkombatbversion.model.Items {
+- String name
+- int count
++ <<Create>> Items(String,int)
++ void setName(String)
++ void setCount(int)
++ String getName()
++ int getCount()
+}
+
+
+class mortalkombatbversion.fabric.LiuKangFabric {
++ Player create(int)
+}
+
+class mortalkombatbversion.fabric.SonyaBladeFabric {
++ Player create(int)
+}
+
+class mortalkombatbversion.fabric.BarakaFabric {
++ Player create(int)
+}
+
+class mortalkombatbversion.controller.ChangeTexts {
++ void NewRoundTexts(Player,Player,JProgressBar,JProgressBar,JLabel,JLabel,JLabel,JLabel,JLabel,JLabel,JLabel,JLabel,JLabel,int,Items[],JRadioButton,JRadioButton,JRadioButton)
++ void RoundTexts(Player,Player,JLabel,JLabel,int,JLabel)
++ void EndGameText(Human,JLabel)
++ void BagText(Items[],JRadioButton,JRadioButton,JRadioButton)
+}
+
+class mortalkombatbversion.model.Fight {
+~ ChangeTexts change
+~ int[] kind_attack
+~ int[] experiences
+~ EnemyFabric fabric
++ int i
+~ int k
+~ int stun
+~ double v
++ void Move(Player,Player,JLabel,JLabel)
++ void Hit(Player,Player,int,JLabel,JLabel,JDialog,JLabel,CharacterAction,JProgressBar,JProgressBar,JDialog,JDialog,JFrame,ArrayList<Result>,JLabel,JLabel,JLabel,JLabel,JLabel,Items[],JRadioButton)
++ void EndRound(Player,Player,JDialog,JLabel,CharacterAction,Items[])
++ void EndFinalRound(Human,CharacterAction,ArrayList<Result>,JDialog,JDialog,JFrame,JLabel,JLabel)
++ int[] ResetAttack()
++ Player NewRound(Player,JLabel,JProgressBar,JProgressBar,JLabel,JLabel,JLabel,CharacterAction)
+}
+
+
+class mortalkombatbversion.model.SonyaBlade {
++ <<Create>> SonyaBlade(int,int,int,int)
++ String getName()
+}
+
+class mortalkombatbversion.fabric.ShaoKahnFabric {
++ Player create(int)
+}
+
+class mortalkombatbversion.model.SubZero {
++ <<Create>> SubZero(int,int,int,int)
++ String getName()
+}
+
+class mortalkombatbversion.model.Result {
+- String name
+- int points
++ <<Create>> Result(String,int)
++ void setName(String)
++ void setPoints(int)
++ String getName()
++ int getPoints()
+}
+
+
+class mortalkombatbversion.fabric.EnemyFabric {
++ Player create(int,int)
+}
+
+class mortalkombatbversion.model.LiuKang {
++ <<Create>> LiuKang(int,int,int,int)
++ String getName()
+}
+
+class mortalkombatbversion.model.Baraka {
++ <<Create>> Baraka(int,int,int,int)
++ String getName()
+}
+
+class mortalkombatbversion.model.Human {
+- int points
+- int experience
+- int win
+- int nextexperience
++ <<Create>> Human(int,int,int,int)
++ int getPoints()
++ int getExperience()
++ int getNextExperience()
++ int getWin()
++ void setPoints(int)
++ void setExperience(int)
++ void setNextExperience(int)
++ void setWin()
++ String getName()
+}
+
+
+class mortalkombatbversion.model.ShaoKahn {
++ <<Create>> ShaoKahn(int,int,int,int)
++ String getName()
+}
+
+class mortalkombatbversion.fabric.SubZeroFabric {
++ Player create(int)
+}
+
+class mortalkombatbversion.model.Player {
+- int level
+- int health
+- int maxhealth
+- int damage
+- int attack
++ <<Create>> Player(int,int,int,int)
++ void setLevel()
++ void setHealth(int)
++ void setNewHealth(int)
++ void setDamage(int)
++ void setAttack(int)
++ void setMaxHealth(int)
++ int getLevel()
++ int getHealth()
++ int getDamage()
++ int getAttack()
++ int getMaxHealth()
++ String getName()
+}
+
+
+
+
+mortalkombatbversion.view.JFrame <|-- mortalkombatbversion.view.JFrames
+mortalkombatbversion.fabric.EnemyFabricInterface <|.. mortalkombatbversion.fabric.LiuKangFabric
+mortalkombatbversion.fabric.EnemyFabricInterface <|.. mortalkombatbversion.fabric.SonyaBladeFabric
+mortalkombatbversion.fabric.EnemyFabricInterface <|.. mortalkombatbversion.fabric.BarakaFabric
+mortalkombatbversion.model.Player <|-- mortalkombatbversion.model.SonyaBlade
+mortalkombatbversion.fabric.EnemyFabricInterface <|.. mortalkombatbversion.fabric.ShaoKahnFabric
+mortalkombatbversion.model.Player <|-- mortalkombatbversion.model.SubZero
+mortalkombatbversion.model.Player <|-- mortalkombatbversion.model.LiuKang
+mortalkombatbversion.model.Player <|-- mortalkombatbversion.model.Baraka
+mortalkombatbversion.model.Player <|-- mortalkombatbversion.model.Human
+mortalkombatbversion.model.Player <|-- mortalkombatbversion.model.ShaoKahn
+mortalkombatbversion.fabric.EnemyFabricInterface <|.. mortalkombatbversion.fabric.SubZeroFabric
+@enduml

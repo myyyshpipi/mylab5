@@ -1,0 +1,465 @@
+@startuml
+
+/' diagram meta data start
+config=CallConfiguration;
+{
+  "rootMethod": "mortalkombatbversion.view.JFrames#JFrames()",
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showMethodParametersTypes": false,
+    "showMethodParametersNames": false,
+    "showMethodReturnType": false,
+    "showPackageLevels": 2,
+    "showCallOrder": false,
+    "edgeMode": "MethodsOnly", // TypesOnly, MethodsOnly, TypesAndMethods, MethodsAndDirectTypeUsage
+    "showDetailedClassStructure": false
+  },
+  "rootClass": "mortalkombatbversion.view.JFrames",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="LR"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_104069929 { 
+   	label=model
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1032868626 { 
+   	label=Fight
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Fight1623116140XXXEndFinalRound1571788835[
+	label="+ EndFinalRound()"
+	style=filled
+	fillcolor=white
+	tooltip="Fight
+
+null"
+	fontcolor=darkgreen
+];
+
+Fight1623116140XXXEndRound1895561225[
+	label="+ EndRound()"
+	style=filled
+	fillcolor=white
+	tooltip="Fight
+
+null"
+	fontcolor=darkgreen
+];
+
+Fight1623116140XXXHit1592609742[
+	label="+ Hit()"
+	style=filled
+	fillcolor=white
+	tooltip="Fight
+
+null"
+	fontcolor=darkgreen
+];
+
+Fight1623116140XXXMove509974542[
+	label="+ Move()"
+	style=filled
+	fillcolor=white
+	tooltip="Fight
+
+null"
+	fontcolor=darkgreen
+];
+
+Fight1623116140XXXNewRound1713406322[
+	label="+ NewRound()"
+	style=filled
+	fillcolor=white
+	tooltip="Fight
+
+null"
+	fontcolor=darkgreen
+];
+
+Fight1623116140XXXResetAttack0[
+	label="+ ResetAttack()"
+	style=filled
+	fillcolor=white
+	tooltip="Fight
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_520893268 { 
+   	label=Game
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   Game1623116140XXXEndGameTop1427398468[
+	label="+ EndGameTop()"
+	style=filled
+	fillcolor=white
+	tooltip="Game
+
+null"
+	fontcolor=darkgreen
+];
+
+Game1623116140XXXNewEnemy714267916[
+	label="+ NewEnemy()"
+	style=filled
+	fillcolor=white
+	tooltip="Game
+
+null"
+	fontcolor=darkgreen
+];
+
+Game1623116140XXXNewHuman533402628[
+	label="+ NewHuman()"
+	style=filled
+	fillcolor=white
+	tooltip="Game
+
+null"
+	fontcolor=darkgreen
+];
+
+Game1623116140XXXReadFromExcel0[
+	label="+ ReadFromExcel()"
+	style=filled
+	fillcolor=white
+	tooltip="Game
+
+null"
+	fontcolor=darkgreen
+];
+
+Game1623116140XXXWriteToExcel0[
+	label="+ WriteToExcel()"
+	style=filled
+	fillcolor=white
+	tooltip="Game
+
+null"
+	fontcolor=darkgreen
+];
+
+Game1623116140XXXWriteToTable2095847004[
+	label="+ WriteToTable()"
+	style=filled
+	fillcolor=white
+	tooltip="Game
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+
+subgraph cluster_197182863 { 
+   	label=mortalkombatbversion
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1790264818 { 
+   	label=MortalKombatBVersion
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   MortalKombatBVersion197182863XXXmain1859653459[
+	label="+ main()"
+	style=filled
+	fillcolor=white
+	tooltip="MortalKombatBVersion
+
+&#10;  @param args the command line arguments&#10; "
+	fontcolor=darkgreen
+];
+} 
+} 
+
+subgraph cluster_3619493 { 
+   	label=view
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1436784548 { 
+   	label=JFrames
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   JFrames1748494334XXXJFrames0[
+	label="+ JFrames()"
+	style=filled
+	fillcolor=white
+	tooltip="JFrames
+
+&#10;  Creates new form JFrame&#10; "
+	penwidth=4
+	fontcolor=darkgreen
+];
+
+JFrames1748494334XXXmain1859653459[
+	label="+ main()"
+	style=filled
+	fillcolor=white
+	tooltip="JFrames
+
+&#10;  @param args the command line arguments&#10; "
+	fontcolor=darkgreen
+];
+} 
+} 
+
+subgraph cluster_637428636 { 
+   	label=controller
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1069379050 { 
+   	label=CharacterAction
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   CharacterAction900135111XXXAddItems6254047[
+	label="+ AddItems()"
+	style=filled
+	fillcolor=white
+	tooltip="CharacterAction
+
+null"
+	fontcolor=darkgreen
+];
+
+CharacterAction900135111XXXAddPoints344167324[
+	label="+ AddPoints()"
+	style=filled
+	fillcolor=white
+	tooltip="CharacterAction
+
+null"
+	fontcolor=darkgreen
+];
+
+CharacterAction900135111XXXAddPointsBoss344167324[
+	label="+ AddPointsBoss()"
+	style=filled
+	fillcolor=white
+	tooltip="CharacterAction
+
+null"
+	fontcolor=darkgreen
+];
+
+CharacterAction900135111XXXChooseBehavior306526666[
+	label="+ ChooseBehavior()"
+	style=filled
+	fillcolor=white
+	tooltip="CharacterAction
+
+null"
+	fontcolor=darkgreen
+];
+
+CharacterAction900135111XXXChooseBoss981915145[
+	label="+ ChooseBoss()"
+	style=filled
+	fillcolor=white
+	tooltip="CharacterAction
+
+null"
+	fontcolor=darkgreen
+];
+
+CharacterAction900135111XXXChooseEnemy1536980612[
+	label="+ ChooseEnemy()"
+	style=filled
+	fillcolor=white
+	tooltip="CharacterAction
+
+null"
+	fontcolor=darkgreen
+];
+
+CharacterAction900135111XXXEnemyBehavior507121775[
+	label="+ EnemyBehavior()"
+	style=filled
+	fillcolor=white
+	tooltip="CharacterAction
+
+null"
+	fontcolor=darkgreen
+];
+
+CharacterAction900135111XXXHP1190859953[
+	label="+ HP()"
+	style=filled
+	fillcolor=white
+	tooltip="CharacterAction
+
+null"
+	fontcolor=darkgreen
+];
+
+CharacterAction900135111XXXUseItem1672718318[
+	label="+ UseItem()"
+	style=filled
+	fillcolor=white
+	tooltip="CharacterAction
+
+null"
+	fontcolor=darkgreen
+];
+} 
+
+subgraph cluster_524911553 { 
+   	label=ChangeTexts
+	labeljust=l
+	fillcolor=white
+	style=filled
+   
+   ChangeTexts900135111XXXBagText2054545223[
+	label="+ BagText()"
+	style=filled
+	fillcolor=white
+	tooltip="ChangeTexts
+
+null"
+	fontcolor=darkgreen
+];
+
+ChangeTexts900135111XXXNewRoundTexts853808388[
+	label="+ NewRoundTexts()"
+	style=filled
+	fillcolor=white
+	tooltip="ChangeTexts
+
+null"
+	fontcolor=darkgreen
+];
+
+ChangeTexts900135111XXXRoundTexts274473081[
+	label="+ RoundTexts()"
+	style=filled
+	fillcolor=white
+	tooltip="ChangeTexts
+
+null"
+	fontcolor=darkgreen
+];
+} 
+} 
+
+'edges    
+ChangeTexts900135111XXXNewRoundTexts853808388 -> ChangeTexts900135111XXXBagText2054545223;
+CharacterAction900135111XXXChooseBehavior306526666 -> CharacterAction900135111XXXEnemyBehavior507121775;
+Fight1623116140XXXEndFinalRound1571788835 -> CharacterAction900135111XXXAddPoints344167324;
+Fight1623116140XXXEndRound1895561225 -> CharacterAction900135111XXXAddItems6254047;
+Fight1623116140XXXEndRound1895561225 -> CharacterAction900135111XXXAddPoints344167324;
+Fight1623116140XXXEndRound1895561225 -> CharacterAction900135111XXXAddPointsBoss344167324;
+Fight1623116140XXXEndRound1895561225 -> Fight1623116140XXXResetAttack0;
+Fight1623116140XXXHit1592609742 -> ChangeTexts900135111XXXRoundTexts274473081;
+Fight1623116140XXXHit1592609742 -> CharacterAction900135111XXXChooseBehavior306526666;
+Fight1623116140XXXHit1592609742 -> CharacterAction900135111XXXHP1190859953;
+Fight1623116140XXXHit1592609742 -> Fight1623116140XXXEndFinalRound1571788835;
+Fight1623116140XXXHit1592609742 -> Fight1623116140XXXEndRound1895561225;
+Fight1623116140XXXHit1592609742 -> Fight1623116140XXXMove509974542;
+Fight1623116140XXXNewRound1713406322 -> CharacterAction900135111XXXChooseBoss981915145;
+Fight1623116140XXXNewRound1713406322 -> CharacterAction900135111XXXChooseEnemy1536980612;
+Fight1623116140XXXNewRound1713406322 -> CharacterAction900135111XXXHP1190859953;
+Game1623116140XXXEndGameTop1427398468 -> Game1623116140XXXWriteToExcel0;
+Game1623116140XXXEndGameTop1427398468 -> Game1623116140XXXWriteToTable2095847004;
+Game1623116140XXXNewEnemy714267916 -> CharacterAction900135111XXXChooseEnemy1536980612;
+Game1623116140XXXNewEnemy714267916 -> CharacterAction900135111XXXHP1190859953;
+Game1623116140XXXNewHuman533402628 -> CharacterAction900135111XXXHP1190859953;
+JFrames1748494334XXXJFrames0 -> ChangeTexts900135111XXXBagText2054545223;
+JFrames1748494334XXXJFrames0 -> ChangeTexts900135111XXXNewRoundTexts853808388;
+JFrames1748494334XXXJFrames0 -> CharacterAction900135111XXXHP1190859953;
+JFrames1748494334XXXJFrames0 -> CharacterAction900135111XXXUseItem1672718318;
+JFrames1748494334XXXJFrames0 -> Fight1623116140XXXHit1592609742;
+JFrames1748494334XXXJFrames0 -> Fight1623116140XXXNewRound1713406322;
+JFrames1748494334XXXJFrames0 -> Game1623116140XXXEndGameTop1427398468;
+JFrames1748494334XXXJFrames0 -> Game1623116140XXXNewEnemy714267916;
+JFrames1748494334XXXJFrames0 -> Game1623116140XXXNewHuman533402628;
+JFrames1748494334XXXJFrames0 -> Game1623116140XXXReadFromExcel0;
+JFrames1748494334XXXJFrames0 -> Game1623116140XXXWriteToTable2095847004;
+JFrames1748494334XXXmain1859653459 -> JFrames1748494334XXXJFrames0;
+MortalKombatBVersion197182863XXXmain1859653459 -> JFrames1748494334XXXJFrames0;
+    
+}
+@enduml
