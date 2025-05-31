@@ -1,0 +1,557 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "mortalcombat.controller.Controller",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_104069929 { 
+   	label=model
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Baraka35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Baraka</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ action(playerActions: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Enemy35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Enemy</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ action(playerActions: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Fighter35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Fighter</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   action: Action [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   damage: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   damageDebuf: double [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   health: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   image: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   incomeDebuf: double [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   level: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   maxHealth: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   name: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   type: FighterType [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   vulnerable: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ buff()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ heal(heal: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ levelDMG(player: Player)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ levelHP(player: Player)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ levelUP()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ reset()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ resetVulnerable()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ takeDamage(damage: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Goro35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Goro</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ action(playerActions: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Item35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Item</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   amount: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ decreaseAmount()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ increaseAmount()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+LiuKang35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)LiuKang</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ action(playerActions: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Player35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Player</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   actions: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   experience: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   nextExperience: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   points: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addPoints()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ addPointsBoss()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Result35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Result</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   name: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   points: int [1]</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ShaoKahn35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ShaoKahn</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ action(playerActions: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SonyaBlade35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SonyaBlade</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ action(playerActions: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SubZero35749822[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SubZero</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ action(playerActions: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_1282179931 { 
+   	label=fabric
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   BarakaFabric894864048[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)BarakaFabric</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ create(): Enemy</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+EnemyFabric894864048[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)EnemyFabric</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ create(enemyIndex: int): Enemy</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GoroFabric894864048[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GoroFabric</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ create(): Enemy</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+LiuKangFabric894864048[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)LiuKangFabric</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ create(): Enemy</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+ShaoKahnFabric894864048[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)ShaoKahnFabric</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ create(): Enemy</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SonyaBladeFabric894864048[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SonyaBladeFabric</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ create(): Enemy</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+SubZeroFabric894864048[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)SubZeroFabric</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ create(): Enemy</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_3619493 { 
+   	label=view
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   JFrames1525436272[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)JFrames</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   GameFrame: JFrame [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   MKImage: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   actionLabel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   attackButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   closeResultsButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   controller: Controller [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   currentEnemy: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   currentLocation: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   damage: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   damageLabel1: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   damageLabel2: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   defendButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   endButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   endGameButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   endRoundDialog: JDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   endRoundLabel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   enemies: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   enemy: Enemy [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   enemyDamage: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   enemyHealth: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   enemyImage: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   enemyLevel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   enemyName: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   enemyProgressBar: JProgressBar [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   experience: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   experienceLabel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   header: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemsButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemsDialog: JDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemsErrorDialog: JDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemsGroup: ButtonGroup [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemsPanel: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemsRadio1: JRadioButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemsRadio2: JRadioButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   itemsRadio3: JRadioButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jDialog3: JDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jLabel11: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jLabel30: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jLabel31: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jLabel32: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jPanel1: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jPanel2: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jPanel3: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jPanel4: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jPanel5: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jPanel6: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jPanel8: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   jScrollPane1: JScrollPane [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   levelButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   levelDialog: JDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   levelGroup: ButtonGroup [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   levelLabel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   levelRadio1: JRadioButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   levelRadio2: JRadioButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   locationButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   locationDialog: JDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   locationLabel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   locationNumberField: JTextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   locations: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   noRecordDialog: JDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   okButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   player: Player [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   playerHealth: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   playerImage: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   playerLevel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   playerName: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   playerNameField: JTextField [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   playerProgressBar: JProgressBar [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   points: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   pointsLabel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   proceedButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   recordDialog: JDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   recordsLabel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   resultsButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   resultsTable: JTable [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   saveLabel1: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   saveLabel2: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   sorryLabel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   startButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   statusLabel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   turnLabel: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   useItemButton: JButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   victoryLabel1: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   victoryLabel2: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   weakenButton: JButton [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- actionAttack()</TD></TR>
+<TR><TD ALIGN="LEFT" >- actionDefend()</TD></TR>
+<TR><TD ALIGN="LEFT" >- actionWeaken()</TD></TR>
+<TR><TD ALIGN="LEFT" >- chooseLocations()</TD></TR>
+<TR><TD ALIGN="LEFT" >- endGame(evt: ActionEvent)</TD></TR>
+<TR><TD ALIGN="LEFT" >- endRound()</TD></TR>
+<TR><TD ALIGN="LEFT" >- initComponents()</TD></TR>
+<TR><TD ALIGN="LEFT" >- initEnemy()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ initItems()</TD></TR>
+<TR><TD ALIGN="LEFT" >- initPlayer()</TD></TR>
+<TR><TD ALIGN="LEFT" >- jButton10ActionPerformed(evt: ActionEvent)</TD></TR>
+<TR><TD ALIGN="LEFT" >- jButton6ActionPerformed()</TD></TR>
+<TR><TD ALIGN="LEFT" >- jButton7ActionPerformed()</TD></TR>
+<TR><TD ALIGN="LEFT" >- jTextField1ActionPerformed()</TD></TR>
+<TR><TD ALIGN="LEFT" >- levelUP()</TD></TR>
+<TR><TD ALIGN="LEFT" >- newRoundTexts()</TD></TR>
+<TR><TD ALIGN="LEFT" >- nextRound()</TD></TR>
+<TR><TD ALIGN="LEFT" >- okButtonActionPerformed(evt: ActionEvent)</TD></TR>
+<TR><TD ALIGN="LEFT" >- playerAction()</TD></TR>
+<TR><TD ALIGN="LEFT" >- resurrect()</TD></TR>
+<TR><TD ALIGN="LEFT" >- startGame()</TD></TR>
+<TR><TD ALIGN="LEFT" >- updateRoundTexts()</TD></TR>
+<TR><TD ALIGN="LEFT" >- useItem(evt: ActionEvent)</TD></TR>
+<TR><TD ALIGN="LEFT" >- viewResults()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ writeToTable(results: ArrayList&lt;Result&gt;)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_637428636 { 
+   	label=controller
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Controller735742937[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Controller</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   currentEnemy: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   currentLocation: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   enemies: Enemy[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   enemy: Enemy [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   items: Item[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   locationEnemies: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   locations: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   maxEnemies: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   minEnemies: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   nextLevelExperience: int[] [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   player: Player [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   playerTurn: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   results: ArrayList&lt;Result&gt; [0..*]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addGameResults(name: String): ArrayList&lt;Result&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ addItems(prob1: int, prob2: int, prob3: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ attack()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ checkLevel(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ defend()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ endGame(): HashMap&lt;String, String&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ endRound(): HashMap&lt;String, String&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ exportData()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getItem(index: int): Item</TD></TR>
+<TR><TD ALIGN="LEFT" >+ importData(): ArrayList&lt;Result&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ initGame(locations: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ levelUP(choice: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ makeTurn(): HashMap&lt;String, String&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ newEnemy()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ newItems()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ resultRound(): HashMap&lt;String, String&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ resultTurn(actingFighter: Fighter, respondFighter: Fighter): HashMap&lt;String, String&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ resurrect(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ useItem(choice: int): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ weaken()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Controller735742937 -> Enemy35749822[label="enemies
+[0..*]"];
+Controller735742937 -> Enemy35749822[label="enemy
+[0..1]"];
+Controller735742937 -> EnemyFabric894864048[label="initGame() -> create()"];
+Controller735742937 -> Item35749822[label="items
+[0..*]"];
+Controller735742937 -> Player35749822[label="player
+[0..1]"];
+Controller735742937 -> Result35749822[label="results
+[0..*]"];
+Enemy35749822 -> Baraka35749822[arrowhead=none, arrowtail=empty, dir=both];
+Enemy35749822 -> Goro35749822[arrowhead=none, arrowtail=empty, dir=both];
+Enemy35749822 -> LiuKang35749822[arrowhead=none, arrowtail=empty, dir=both];
+Enemy35749822 -> ShaoKahn35749822[arrowhead=none, arrowtail=empty, dir=both];
+Enemy35749822 -> SonyaBlade35749822[arrowhead=none, arrowtail=empty, dir=both];
+Enemy35749822 -> SubZero35749822[arrowhead=none, arrowtail=empty, dir=both];
+EnemyFabric894864048 -> BarakaFabric894864048[arrowhead=none];
+EnemyFabric894864048 -> GoroFabric894864048[arrowhead=none];
+EnemyFabric894864048 -> LiuKangFabric894864048[arrowhead=none];
+EnemyFabric894864048 -> ShaoKahnFabric894864048[arrowhead=none];
+EnemyFabric894864048 -> SonyaBladeFabric894864048[arrowhead=none];
+EnemyFabric894864048 -> SubZeroFabric894864048[arrowhead=none];
+Fighter35749822 -> Enemy35749822[arrowhead=none, arrowtail=empty, dir=both];
+Fighter35749822 -> Player35749822[arrowhead=none, arrowtail=empty, dir=both];
+JFrames1525436272 -> Controller735742937[label="controller
+[0..1]"];
+    
+}
+@enduml
