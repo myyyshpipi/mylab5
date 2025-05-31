@@ -10,9 +10,105 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66ddea2a-cc1b-43f3-974d-0404c6fd67a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mylab5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Baraka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/FighterType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Goro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/LiuKang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/ShaoKahn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/SonyaBlade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/SubZero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mylab5_jar/mylab5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mylab5_jar/mylab5.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Fighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Fighter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/BarakaFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/BarakaFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/EnemyFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/EnemyFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/EnemyFabricInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/EnemyFabricInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/GoroFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/GoroFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/LiuKangFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/LiuKangFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/ShaoKahnFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/ShaoKahnFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/SonyaBladeFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/SonyaBladeFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/SubZeroFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/SubZeroFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/MortalKombatBVersion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/MortalKombatBVersion_structure.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/controller/ChangeTexts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/controller/CharacterAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/BarakaFabric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/EnemyFabric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/EnemyFabricInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/LiuKangFabric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/ShaoKahnFabric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/SonyaBladeFabric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/fabric/SubZeroFabric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Baraka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Fight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Human.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Items.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/LiuKang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/ShaoKahn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/SonyaBlade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/model/SubZero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/mortalkombatbLab5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/view/JFrames.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/view/JFrames.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/view/JFrames_0_JFrames_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mortalkombatbversion/view/JFrames_1_main_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/out/production/mortalkombatbLab5/mortalkombatbversion/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/out/production/mortalkombatbLab5/mortalkombatbversion/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/out/production/mortalkombatbLab5/mortalkombatbversion/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/out/production/mortalkombatbLab5/mortalkombatbversion/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/out/production/mortalkombatbLab5/mortalkombatbversion/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/out/production/mortalkombatbLab5/mortalkombatbversion/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/out/production/mortalkombatbLab5/mortalkombatbversion/mortalkombatbLab5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/MortalKombatBVersion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/controller/ChangeTexts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/controller/CharacterAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/fabric/BarakaFabric.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/fabric/EnemyFabric.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/fabric/EnemyFabricInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/fabric/LiuKangFabric.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/fabric/ShaoKahnFabric.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/fabric/SonyaBladeFabric.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/fabric/SubZeroFabric.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/Baraka.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/Fight.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/Human.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/Items.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/LiuKang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/ShaoKahn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/SonyaBlade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/model/SubZero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mortalkombatbversion/view/JFrames.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Структура классов.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Структура классов.puml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,44 +132,50 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2xeks08WevVsQdQatHvTrBL2q2Z" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.JFrames.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MortalKombatBVersion.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/alex/Projects/LabWork4/mylab5&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.JFrames.executor": "Run",
+    "Application.MortalKombatBVersion.executor": "Run",
+    "Application.Mylab5.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/alex/Projects/LabWork4/mylab5/data",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/mortalkombatbversion" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/view" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/mortalkombat" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/mortalkombat/Frame" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="mortalkombatbversion.enemy" />
       <recent name="mortalkombatbversion.fabric" />
       <recent name="org.example.model" />
       <recent name="org.example.controller" />
@@ -82,8 +184,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
       </set>
     </attachedChunks>
   </component>
@@ -100,7 +202,11 @@
       <workItem from="1748360003669" duration="1635000" />
       <workItem from="1748361655170" duration="86000" />
       <workItem from="1748361851074" duration="3357000" />
-      <workItem from="1748425054134" duration="302000" />
+      <workItem from="1748425054134" duration="6891000" />
+      <workItem from="1748465160058" duration="618000" />
+      <workItem from="1748546817057" duration="777000" />
+      <workItem from="1748622826084" duration="14203000" />
+      <workItem from="1748649191640" duration="441000" />
     </task>
     <servers />
   </component>
