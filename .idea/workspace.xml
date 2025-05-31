@@ -10,36 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66ddea2a-cc1b-43f3-974d-0404c6fd67a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/mylab5_jar/mylab5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mylab5_jar/mylab5.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/Mylab5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/Mylab5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Baraka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/Baraka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Fighter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/Fighter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/FighterType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/FighterType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Goro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/Goro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/LiuKang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/LiuKang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/ShaoKahn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/ShaoKahn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/SonyaBlade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/SonyaBlade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/SubZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/model/SubZero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/BarakaFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/fabric/BarakaFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/EnemyFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/fabric/EnemyFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/EnemyFabricInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/fabric/EnemyFabricInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/GoroFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/fabric/GoroFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/LiuKangFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/fabric/LiuKangFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/ShaoKahnFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/fabric/ShaoKahnFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/SonyaBladeFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/fabric/SonyaBladeFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/model/fabric/SubZeroFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/fabric/SubZeroFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/view/JFrames.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/view/JFrames.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mortalcombatbversion/view/JFrames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mortalcombat/view/JFrames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +114,7 @@
       <workItem from="1748649191640" duration="1758000" />
       <workItem from="1748650993279" duration="430000" />
       <workItem from="1748651439375" duration="191000" />
-      <workItem from="1748651901880" duration="487000" />
+      <workItem from="1748651901880" duration="795000" />
     </task>
     <servers />
   </component>
