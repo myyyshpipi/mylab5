@@ -157,7 +157,7 @@ public class JFrames extends JFrame {
     }
 
     /**
-     * Действия игрока
+     * Обновление отображения информации после действия игрока
      */
     private void playerAction() {
         HashMap<String, String> labels = controller.makeTurn();

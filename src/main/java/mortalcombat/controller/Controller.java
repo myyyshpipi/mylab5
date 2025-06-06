@@ -221,7 +221,7 @@ public class Controller {
     }
 
     /**
-     * Результат раунд в локации
+     * Результат раунда в локации
      */
     public HashMap<String, String> resultRound() {
         if (currentEnemy == locationEnemies) {
