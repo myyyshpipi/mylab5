@@ -1,8 +1,8 @@
-package mortalcombat.fabric;
+package org.mortalcombat.fabric;
 
 
-import mortalcombat.model.SonyaBlade;
-import mortalcombat.model.Enemy;
+import org.mortalcombat.model.SonyaBlade;
+import org.mortalcombat.model.Enemy;
 
 public class SonyaBladeFabric implements EnemyFabricInterface {
 

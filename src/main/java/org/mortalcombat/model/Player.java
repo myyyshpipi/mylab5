@@ -1,7 +1,7 @@
-package mortalcombat.model;
+package org.mortalcombat.model;
 
-import static mortalcombat.model.Action.*;
-import static mortalcombat.model.FighterType.PLAYER;
+import static org.mortalcombat.model.Action.*;
+import static org.mortalcombat.model.FighterType.PLAYER;
 
 /**
  * Player - класс игрока
@@ -19,7 +19,7 @@ public class Player extends Fighter {
         this.experience = 0;
         this.nextExperience = 40;
         this.name = "Kitana";
-        this.image = "src/main/resources/images/Kitana.jpg";
+        this.image = "images/Kitana.jpg";
         this.type = PLAYER;
     }
 

@@ -1,8 +1,8 @@
-package mortalcombat.fabric;
+package org.mortalcombat.fabric;
 
 
-import mortalcombat.model.LiuKang;
-import mortalcombat.model.Enemy;
+import org.mortalcombat.model.LiuKang;
+import org.mortalcombat.model.Enemy;
 
 public class LiuKangFabric implements EnemyFabricInterface {
 

@@ -1,6 +1,6 @@
-package mortalcombat.fabric;
+package org.mortalcombat.fabric;
 
-import mortalcombat.model.Enemy;
+import org.mortalcombat.model.Enemy;
 
 /**
  * Реализация фабричного метода для создания врагов

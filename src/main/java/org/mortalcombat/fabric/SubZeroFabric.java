@@ -1,8 +1,8 @@
-package mortalcombat.fabric;
+package org.mortalcombat.fabric;
 
 
-import mortalcombat.model.SubZero;
-import mortalcombat.model.Enemy;
+import org.mortalcombat.model.SubZero;
+import org.mortalcombat.model.Enemy;
 
 public class SubZeroFabric implements EnemyFabricInterface {
     @Override

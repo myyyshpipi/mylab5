@@ -1,9 +1,9 @@
-package mortalcombat.model;
+package org.mortalcombat.model;
 
 import java.util.Random;
 
-import static mortalcombat.model.Action.*;
-import static mortalcombat.model.FighterType.BOSS;
+import static org.mortalcombat.model.Action.*;
+import static org.mortalcombat.model.FighterType.BOSS;
 
 /**
  * ShaoKahn - класс босса
@@ -12,7 +12,7 @@ public class ShaoKahn extends Enemy {
     public ShaoKahn(int level, int health, int damage) {
         super(level, health, damage);
         this.name = "Shao Kahn (босс)";
-        this.image = "src/main/resources/images/Shao Kahn.jpg";
+        this.image = "images/Shao Kahn.jpg";
         this.type = BOSS;
     }
 

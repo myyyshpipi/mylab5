@@ -1,9 +1,9 @@
-package mortalcombat.model;
+package org.mortalcombat.model;
 
 import java.util.Random;
 
-import static mortalcombat.model.Action.*;
-import static mortalcombat.model.FighterType.BOSS;
+import static org.mortalcombat.model.Action.*;
+import static org.mortalcombat.model.FighterType.BOSS;
 
 /**
  * Goro - это класс босса
@@ -12,7 +12,7 @@ public class Goro extends Enemy {
     public Goro(int level, int health, int damage) {
         super(level, health, damage);
         this.name = "Goro (босс)";
-        this.image = "src/main/resources/images/Goro.jpg";
+        this.image = "images/Goro.jpg";
         this.type = BOSS;
     }
 

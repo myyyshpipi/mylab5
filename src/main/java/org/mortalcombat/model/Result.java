@@ -1,5 +1,5 @@
 
-package mortalcombat.model;
+package org.mortalcombat.model;
 
 /**
  * Класс для хранения результатов раунда

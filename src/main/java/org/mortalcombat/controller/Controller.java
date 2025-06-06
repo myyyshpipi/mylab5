@@ -1,22 +1,22 @@
-package mortalcombat.controller;
+package org.mortalcombat.controller;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
 
-import mortalcombat.model.Enemy;
-import mortalcombat.model.Player;
-import mortalcombat.model.ShaoKahn;
-import mortalcombat.model.Fighter;
-import mortalcombat.fabric.EnemyFabric;
-import mortalcombat.model.Item;
-import mortalcombat.model.Result;
+import org.mortalcombat.model.Enemy;
+import org.mortalcombat.model.Player;
+import org.mortalcombat.model.ShaoKahn;
+import org.mortalcombat.model.Fighter;
+import org.mortalcombat.fabric.EnemyFabric;
+import org.mortalcombat.model.Item;
+import org.mortalcombat.model.Result;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import static mortalcombat.model.Action.*;
+import static org.mortalcombat.model.Action.*;
 
 /**
  * Обработчик всех действий игрока и врага и хода игры

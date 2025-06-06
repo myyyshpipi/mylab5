@@ -1,10 +1,10 @@
-package mortalcombat.view;
+package org.mortalcombat.view;
 
-import mortalcombat.controller.Controller;
-import mortalcombat.model.Enemy;
-import mortalcombat.model.Player;
-import mortalcombat.model.Item;
-import mortalcombat.model.Result;
+import org.mortalcombat.controller.Controller;
+import org.mortalcombat.model.Enemy;
+import org.mortalcombat.model.Player;
+import org.mortalcombat.model.Item;
+import org.mortalcombat.model.Result;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -55,7 +55,8 @@ public class JFrames extends JFrame {
     private void initPlayer() {
         player = controller.getPlayer();
         playerName.setText(player.getName() );
-        ImageIcon imageIcon = new ImageIcon(player.getImage());
+        //ImageIcon imageIcon = new ImageIcon( player.getImage() );
+        ImageIcon imageIcon = new ImageLoader().loadIcon(player.getImage());
         Image image = imageIcon.getImage();
         Image newimg = image.getScaledInstance(250, 300,  java.awt.Image.SCALE_SMOOTH);
         playerImage.setIcon(new ImageIcon(newimg));
@@ -72,7 +73,8 @@ public class JFrames extends JFrame {
     private void initEnemy() {
         enemy = controller.getEnemy();
         enemyName.setText(enemy.getName());
-        ImageIcon imageIcon = new ImageIcon(enemy.getImage());
+        //ImageIcon imageIcon = new ImageIcon(enemy.getImage());
+        ImageIcon imageIcon = new ImageLoader().loadIcon(enemy.getImage());
         Image image = imageIcon.getImage();
         Image newimg = image.getScaledInstance(250, 300,  java.awt.Image.SCALE_SMOOTH);
         enemyImage.setIcon(new ImageIcon(newimg));

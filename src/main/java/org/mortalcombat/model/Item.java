@@ -1,4 +1,4 @@
-package mortalcombat.model;
+package org.mortalcombat.model;
 
 /**
  * Класс предметов для игрока

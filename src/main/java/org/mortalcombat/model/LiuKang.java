@@ -1,10 +1,10 @@
-package mortalcombat.model;
+package org.mortalcombat.model;
 
 import java.util.Random;
 
-import static mortalcombat.model.Action.ATTACK;
-import static mortalcombat.model.Action.DEFEND;
-import static mortalcombat.model.FighterType.FIGHTER;
+import static org.mortalcombat.model.Action.ATTACK;
+import static org.mortalcombat.model.Action.DEFEND;
+import static org.mortalcombat.model.FighterType.FIGHTER;
 
 /**
  * LiuKang - класс бойца
@@ -14,7 +14,7 @@ public class LiuKang extends Enemy {
     public LiuKang(int level, int health, int damage) {
         super(level, health, damage);
         this.name = "Liu Kang";
-        this.image = "src/main/resources/images/Baraka.jpg";
+        this.image = "images/Baraka.jpg";
         this.type = FIGHTER;
     }
 

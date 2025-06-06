@@ -1,6 +1,6 @@
-package mortalcombat.model;
+package org.mortalcombat.model;
 
-import static mortalcombat.model.Action.*;
+import static org.mortalcombat.model.Action.*;
 
 /**
  * Основной класс для создания бойцов

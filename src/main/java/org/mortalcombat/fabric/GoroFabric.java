@@ -1,7 +1,7 @@
-package mortalcombat.fabric;
+package org.mortalcombat.fabric;
 
-import mortalcombat.model.Goro;
-import mortalcombat.model.Enemy;
+import org.mortalcombat.model.Goro;
+import org.mortalcombat.model.Enemy;
 
 public class GoroFabric implements EnemyFabricInterface {
 

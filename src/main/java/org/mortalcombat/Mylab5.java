@@ -1,7 +1,7 @@
-package mortalcombat;
+package org.mortalcombat;
 
-import mortalcombat.view.JFrames;
-import mortalcombat.controller.Controller;
+import org.mortalcombat.view.JFrames;
+import org.mortalcombat.controller.Controller;
 
 public class Mylab5 {
     public static void main(String[] args) {

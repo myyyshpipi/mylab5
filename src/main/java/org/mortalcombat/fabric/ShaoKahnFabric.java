@@ -1,7 +1,7 @@
-package mortalcombat.fabric;
+package org.mortalcombat.fabric;
 
-import mortalcombat.model.ShaoKahn;
-import mortalcombat.model.Enemy;
+import org.mortalcombat.model.ShaoKahn;
+import org.mortalcombat.model.Enemy;
 
 public class ShaoKahnFabric implements EnemyFabricInterface {
 

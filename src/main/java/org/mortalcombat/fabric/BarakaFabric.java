@@ -1,7 +1,7 @@
-package mortalcombat.fabric;
+package org.mortalcombat.fabric;
 
-import mortalcombat.model.Baraka;
-import mortalcombat.model.Enemy;
+import org.mortalcombat.model.Baraka;
+import org.mortalcombat.model.Enemy;
 
 public class BarakaFabric implements EnemyFabricInterface {
 

@@ -1,9 +1,9 @@
-package mortalcombat.model;
+package org.mortalcombat.model;
 
 import java.util.Random;
 
-import static mortalcombat.model.Action.*;
-import static mortalcombat.model.FighterType.WITCH;
+import static org.mortalcombat.model.Action.*;
+import static org.mortalcombat.model.FighterType.WITCH;
 
 /**
  * Subzero - класс мага
@@ -12,7 +12,7 @@ public class SubZero extends Enemy {
     public SubZero(int level, int health, int damage) {
         super(level, health, damage);
         this.name = "SubZero (маг)";
-        this.image = "src/main/resources/images/Sub-Zero.jpg";
+        this.image = "images/Sub-Zero.jpg";
         this.type = WITCH;
     }
 
