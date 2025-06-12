@@ -9,21 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a4f741-e5e8-4d5a-b6d8-3a538c103caf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/MK.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mortalcombat/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mortalcombat/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/BarakaFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/BarakaFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/EnemyFabricInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/EnemyFabricInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/GoroFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/GoroFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/LiuKangFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/LiuKangFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/ShaoKahnFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/ShaoKahnFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/SonyaBladeFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/SonyaBladeFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/SubZeroFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mortalcombat/fabric/SubZeroFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mortalcombat/view/JFrames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mortalcombat/view/JFrames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/MK.jpeg" beforeDir="false" />
-    </list>
+    <list default="true" id="61a4f741-e5e8-4d5a-b6d8-3a538c103caf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749243458074</updated>
-      <workItem from="1749243459397" duration="18344000" />
+      <workItem from="1749243459397" duration="19386000" />
     </task>
     <servers />
   </component>

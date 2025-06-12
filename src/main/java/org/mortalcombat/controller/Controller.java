@@ -25,7 +25,7 @@ public class Controller {
     private Player player;
     private Enemy enemy;
     private final Item[] items = new Item[3];
-    private ArrayList<Result> results = new ArrayList<>();
+    private final ArrayList<Result> results = new ArrayList<>();
 
     private boolean playerTurn = true;
     private final int[] nextLevelExperience = {40, 90, 180, 260, 410, 1000};
@@ -405,8 +405,10 @@ public class Controller {
      */
     public ArrayList<Result> importData() {
         try {
-            XSSFWorkbook book = new XSSFWorkbook("Results.xlsx");
-            XSSFSheet sh = book.getSheetAt(0);
+            XSSFSheet sh;
+            try (XSSFWorkbook book = new XSSFWorkbook("Results.xlsx")) {
+                sh = book.getSheetAt(0);
+            }
             for (int i = 1; i <= sh.getLastRowNum(); i++) {
                 results.add(new Result(sh.getRow(i).getCell(1).getStringCellValue(), (int) sh.getRow(i).getCell(2).getNumericCellValue()));
             }

@@ -50,7 +50,7 @@ public class Fighter {
     }
 
     /**
-     * Изменение уровня урона бойца в зависимости от его уровня</p>
+     * Изменение уровня урона бойца в зависимости от его уровня
      */
     public void levelDMG(Player player) {
         int damage = switch (player.getLevel()) {
