@@ -41,7 +41,7 @@ public class Controller {
      * Инициализация настроек игры
      */
     public void initGame(int locations) {
-        player = new Player(0, 80, 16);
+        newPlayer();
         Random random = new Random();
         this.locations = locations;
         currentLocation = 1;
@@ -55,7 +55,9 @@ public class Controller {
         newEnemy();
         newItems();
     }
-
+    public void newPlayer() {
+        player = new Player(1, 80, 16);
+    }
     public void newEnemy() {
         if (currentEnemy == locationEnemies) {
             Random random = new Random();
@@ -65,9 +67,9 @@ public class Controller {
 
     public void newItems() {
         Random random = new Random();
-        items[0] = new Item("Малое зелье", random.nextInt(5));
+        items[0] = new Item("Малое зелье", random.nextInt(7));
         items[1] = new Item("Большое зелье", random.nextInt(5));
-        items[2] = new Item("Крест возрождения", random.nextInt(5));
+        items[2] = new Item("Крест возрождения", random.nextInt(2));
     }
 
     public void defend() {

@@ -40,7 +40,7 @@ public class JFrames extends JFrame {
 
         controller.initGame(locations);
         GameFrame.setVisible(rootPaneCheckingEnabled);
-        GameFrame.setSize(1100, 700);
+        GameFrame.setSize(1024, 768);
 
         newRoundTexts();
     }
@@ -101,12 +101,23 @@ public class JFrames extends JFrame {
     private void newRoundTexts() {
         initEnemy();
         initPlayer();
+        initItems();
 
         statusLabel.setText("");
-        //locations.setText(controller.getCurrentLocation() + "/" + controller.getLocations());
-        locations.setText( String.valueOf(controller.getCurrentLocation()) );
-        //enemies.setText(controller.getCurrentEnemy() + "/" + controller.getEnemies());
-        enemies.setText(String.valueOf(controller.getCurrentEnemy()));
+        locations.setBackground(new java.awt.Color(255, 255, 255));
+        locations.setForeground(new java.awt.Color(113, 90, 16));
+        locations.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        locations.setText(controller.getCurrentLocation() + " of " + controller.getLocations());
+        //locations.setText( String.valueOf(controller.getCurrentLocation()) );
+        enemies.setBackground(new java.awt.Color(255, 255, 255));
+        enemies.setForeground(new java.awt.Color(113, 90, 16));
+        enemies.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        enemies.setText(controller.getCurrentEnemy() + " of " + controller.getEnemies());
+        //enemies.setText(String.valueOf(controller.getCurrentEnemy()));
+
+
+
+
 
         experience.setText(player.getExperience() + "/" + player.getNextExperience());
         points.setText(Integer.toString(player.getPoints()));
@@ -116,7 +127,7 @@ public class JFrames extends JFrame {
             turnLabel.setText(enemy.getName() + "'s turn");
         }
         actionLabel.setText("");
-        initItems();
+
     }
 
     /**
@@ -408,14 +419,35 @@ public class JFrames extends JFrame {
         weakenButton = new javax.swing.JButton();
 
         locationLabel = new javax.swing.JLabel("Количество локаций :");
-        locationNumberField = new javax.swing.JTextField();
+        locationNumberField = new javax.swing.JTextField("3");
         locationButton = new javax.swing.JButton();
         locationDialog = new javax.swing.JDialog();
 
-        currentLocation = new javax.swing.JLabel("  Локация: ");
+
+
+        currentLocation = new javax.swing.JLabel("  Location : ");
+        currentLocation.setBackground(new java.awt.Color(255, 255, 255));
+        currentLocation.setForeground(new java.awt.Color(113, 90, 16));
+        currentLocation.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        currentLocation.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
+
         locations = new javax.swing.JLabel("1");
-        currentEnemy = new javax.swing.JLabel("  Враг :");
+        locations.setBackground(new java.awt.Color(255, 255, 255));
+        locations.setForeground(new java.awt.Color(113, 90, 16));
+        locations.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        locations.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
+
+        currentEnemy = new javax.swing.JLabel("  Enemy :");
+        currentEnemy.setBackground(new java.awt.Color(255, 255, 255));
+        currentEnemy.setForeground(new java.awt.Color(113, 90, 16));
+        currentEnemy.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        currentEnemy.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
+
         enemies = new javax.swing.JLabel("1");
+        enemies.setBackground(new java.awt.Color(255, 255, 255));
+        enemies.setForeground(new java.awt.Color(113, 90, 16));
+        enemies.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        enemies.setFont(new java.awt.Font("Comic Sans MS", 0, 12));
 
         levelGroup = new javax.swing.ButtonGroup();
         levelLabel = new javax.swing.JLabel("Вы повысили уровень! \nВы можете выбрать, \nкакую характеристику улучшить");
@@ -481,7 +513,7 @@ public class JFrames extends JFrame {
             }
         });
 
-        locationDialog.setBounds(150, 150, 200, 200);
+        locationDialog.setBounds(150, 150, 200, 150);
         javax.swing.GroupLayout locationDialogLayout = new javax.swing.GroupLayout(locationDialog.getContentPane());
         locationDialog.getContentPane().setLayout(locationDialogLayout);
         locationDialogLayout.setHorizontalGroup(
@@ -505,12 +537,12 @@ public class JFrames extends JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        playerImage.setIcon(new javax.swing.ImageIcon("src/main/resources/images/Kitana.jpg")); // NOI18N
+        playerImage.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("images/Kitana.jpg"))); // NOI18N
 
         weakenButton.setBackground(new java.awt.Color(255, 0, 204));
         weakenButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         weakenButton.setForeground(new java.awt.Color(0, 0, 0));
-        weakenButton.setText("Баффнуть");
+        weakenButton.setText("Weaken");
         weakenButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 actionWeaken();
@@ -521,7 +553,7 @@ public class JFrames extends JFrame {
         attackButton.setBackground(new java.awt.Color(255, 0, 0));
         attackButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         attackButton.setForeground(new java.awt.Color(0, 0, 0));
-        attackButton.setText("Атаковать");
+        attackButton.setText("Attack");
         attackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 actionAttack();
@@ -531,7 +563,7 @@ public class JFrames extends JFrame {
         defendButton.setBackground(new java.awt.Color(255, 204, 0));
         defendButton.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         defendButton.setForeground(new java.awt.Color(0, 0, 0));
-        defendButton.setText("Защититься");
+        defendButton.setText("Defend");
         defendButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 actionDefend();
@@ -573,7 +605,7 @@ public class JFrames extends JFrame {
         playerLevel.setBackground(new java.awt.Color(255, 255, 255));
         playerLevel.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
         playerLevel.setForeground(new java.awt.Color(0, 0, 0));
-        playerLevel.setText("0 уровень");
+        playerLevel.setText("1 уровень");
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 255));
         jLabel11.setFont(new java.awt.Font("Comic Sans MS", 3, 36)); // NOI18N
@@ -1285,7 +1317,8 @@ public class JFrames extends JFrame {
             }
         });
 
-        MKImage.setIcon(new javax.swing.ImageIcon("src/main/resources/images/MK.jpeg")); // NOI18N
+        //MKImage.setIcon(new javax.swing.ImageIcon("src/main/resources/images/MK.jpeg")); // NOI18N
+        MKImage.setIcon(new javax.swing.ImageIcon(getClass().getClassLoader().getResource("images/MK.jpg")));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

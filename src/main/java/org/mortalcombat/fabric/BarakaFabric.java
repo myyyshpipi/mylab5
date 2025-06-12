@@ -3,6 +3,9 @@ package org.mortalcombat.fabric;
 import org.mortalcombat.model.Baraka;
 import org.mortalcombat.model.Enemy;
 
+/**
+ * Класс фабрика для Baraka
+ */
 public class BarakaFabric implements EnemyFabricInterface {
 
     @Override
