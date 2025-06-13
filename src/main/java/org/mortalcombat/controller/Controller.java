@@ -266,12 +266,16 @@ public class Controller {
         } else {
             labels.put("endRoundLabel", enemy.getName() + " win");
         }
+        // проверка здоровья игрока
+        if (player.getHealth() <= 0) return endGame();
+
         enemy.reset();
         player.reset();
 
         newEnemy();
 
         if (currentLocation == locations) return endGame();
+
 
         labels.put("currentEnemy", String.valueOf(currentEnemy));
         labels.put("currentLocation", String.valueOf(currentLocation));
