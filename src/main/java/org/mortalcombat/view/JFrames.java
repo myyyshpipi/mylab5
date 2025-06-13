@@ -216,7 +216,7 @@ public class JFrames extends JFrame {
             } else {
                 noRecordDialog.setVisible(true);
                 noRecordDialog.setBounds(150, 150, 600, 500);
-                victoryLabel1.setText(labels.get("victoryLabel"));
+                victoryLabel2.setText(labels.get("victoryLabel"));
             }
             GameFrame.dispose();
         } else {
