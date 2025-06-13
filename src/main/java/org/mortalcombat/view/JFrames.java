@@ -1094,7 +1094,7 @@ public class JFrames extends JFrame {
         victoryLabel2.setFont(new java.awt.Font("Comic Sans MS", 3, 24)); // NOI18N
         victoryLabel2.setForeground(new java.awt.Color(255, 0, 0));
         victoryLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        victoryLabel2.setText("Победа на вашей стороне");
+        victoryLabel2.setText("Победа не на вашей стороне");
 
         sorryLabel.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
         sorryLabel.setForeground(new java.awt.Color(102, 102, 102));

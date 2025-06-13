@@ -244,7 +244,7 @@ public class Controller {
      *
      */
     public boolean isEnd() {
-        return player.getHealth() == 0 | enemy.getHealth() == 0;
+        return player.getHealth() == 0 || enemy.getHealth() == 0;
     }
 
     /**
@@ -288,9 +288,13 @@ public class Controller {
         HashMap<String, String> labels = new HashMap<>();
         labels.put("action", "endGame");
         String text = "Победа не на вашей стороне";
+        //System.out.println("Player : " + player.getHealth());
+        //System.out.println("Enemies : " + enemy.getHealth());
         if (player.getHealth() > 0) {
             player.addPoints();
             text = "Победа на вашей стороне";
+        } else {
+             text = "Победа не на вашей стороне";
         }
 
         int place = 0;
