@@ -244,7 +244,7 @@ public class Controller {
      *
      */
     public boolean isEnd() {
-        return player.getHealth() == 0 || enemy.getHealth() == 0;
+        return player.getHealth() <= 0 || enemy.getHealth() <= 0;
     }
 
     /**
@@ -290,13 +290,13 @@ public class Controller {
         String text = "Победа не на вашей стороне";
         System.out.println("Player : " + player.getHealth());
         System.out.println("Enemies : " + enemy.getHealth());
-        if (player.getHealth() > 0) {
+        if (player.getHealth() > enemy.getHealth()) {
             player.addPoints();
             text = "Победа на вашей стороне";
         } else {
              text = "Победа не на вашей стороне";
         }
-
+        System.out.println("victoryLabel : " + text);
         int place = 0;
         for (Result result : results) {
             if (player.getPoints() < result.getPoints()) {
